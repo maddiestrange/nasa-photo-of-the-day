@@ -15,11 +15,12 @@ export default function NASAgrid({ limit }) {
         console.log("NASA api:", dailyURL);
       });
   }, []);
+
   console.log(NASAdata.media_type)
   if(NASAdata.media_type === 'video'){
       return(
-          <div className="video-card">
-          <VideoCard src={NASAdata.url} />
+          <div className="NASA-grid">
+          <VideoCard key={NASAdata.url} vidUrl={NASAdata.url} />
           </div>
       )
   }
