@@ -1,0 +1,67 @@
+
+body{
+  background-image: url("https://photojournal.jpl.nasa.gov/jpeg/PIA23121.jpg"), linear-gradient(#eb01a5, #d13531) !important;
+  background-size: cover !important; /* Resize the background image to cover the entire container */
+}
+
+
+.App {
+  text-align: center;
+  margin-top: 40px;
+ 
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.NASA-card{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+.daily-card{
+    width: 70%;
+    margin-right: 60px; 
+    border: 1px solid black;
+    padding: 20px;
+    text-align: left;
+    border-radius: .28571429rem;
+    background: rgba(255, 255, 255, 0.712);
+    img{
+        max-height: 1000px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.ui.card{
+    background: rgba(255, 255, 255, 0.900);
+    width: 20%;
+    height: 50%;
+    justify-content: center;
+}
+}
