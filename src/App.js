@@ -1,9 +1,8 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "./App.css";
+import "./App.scss";
 import NASAcard from './components/NASACard'
-
 
 function App() {
   let today = new Date();
@@ -33,9 +32,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>
-      👽 🔭 Daily NASA Dose 🌌
-      </h1>
       <NASAcard title={data.title}
                 url={data.url}
                 explanation={data.explanation}
@@ -43,8 +39,6 @@ function App() {
                 newDate={newDate}
                 media_type={data.media_type}
                 />
-                
-    
     </div>
   );
 }
